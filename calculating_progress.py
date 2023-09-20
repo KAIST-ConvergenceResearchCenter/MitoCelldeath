@@ -31,7 +31,7 @@ class Input_Image_Split(object):
             for h in range(range_h):
                 img_peice_num = "{}.png".format("_{0:03d}".format(i))
                 bbox = (h * grid_h, w * grid_w, (h + 1) * (grid_h), (w + 1) * (grid_w))
-                img_crop = img.crop(bbox)  # 가로 세로 시작, 가로 세로 끝
+                img_crop = img.crop(bbox)  # 가로 세로 시작, 가로 세로 끝 지점
 
                 crop_img_name = fname + img_peice_num
                 peices_img_list.append(crop_img_name)
